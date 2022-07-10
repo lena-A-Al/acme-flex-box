@@ -1,0 +1,89 @@
+/* main container */
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: dodgerblue;
+  padding: 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 2;
+  padding: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.acme-layout {
+  position: absolute;
+  /* top:0; */
+  left: 0;
+  padding: 2rem;
+}
+
+nav :nth-child(2) {
+  font-weight: bold;
+}
+
+.form-section {
+  background-color: white;
+  color: gray;
+}
+
+/* form style */
+
+#main-container {
+  display: flex;
+  justify-content: center;
+}
+.form {
+  border: 2px solid gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  padding-bottom: 1rem;
+}
+
+.input,
+.dropdown {
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  padding: 1rem;
+  color: rgb(17, 17, 186);
+  padding-right: 3rem;
+}
+
+.save {
+  background-color: dodgerblue;
+  color: white;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content:space-around
+}
+section div{
+    /* background-color:aqua; */
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 1rem;
+    flex: 0 0 25%;
+    margin-bottom:2rem;
+}
+.card-title, .card-p{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}

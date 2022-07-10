@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Acme-Flex-Box</title>
+  </head>
+  <body>
+    <!-- nav section -->
+    <div class="header">
+      <nav>
+        <a href="#" class="acme-layout">Acme Layout</a>
+        <a href="#">Users</a>
+        <a href="#">Departments</a>
+        <a href="#">Contacts</a>
+      </nav>
+    </div>
+    <!-- form section -->
+    <div class="form-section">
+      <h1>Users</h1>
+      <div id="main-container">
+        <form class="form" action="/acme_flex_page">
+          <h1 id="form-title">Create A user</h1>
+          <div class="input">
+            <lable for="firstname">First Name</lable>
+            <input
+              type="text"
+              name="firstname"
+              id="firstname"
+              placeholder="Jane"
+            />
+          </div>
+          <div class="input">
+            <lable for="lastname">Last Name</lable>
+            <input
+              type="text"
+              name="lastname"
+              id="lastname"
+              placeholder="Joe"
+            />
+          </div>
+          <div class="dropdown">
+            <lable for="department" class="dropdown-label">Department</lable>
+            <select name="department" id="department">
+              <option>--None--</option>
+            </select>
+          </div>
+          <div>
+            <button type="button" class="clear">Clear</button>
+            <button type="button" class="save">Save</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- card section -->
+    <section>
+      <div>
+        <h3 class="card-title">User A</h3>
+        <p class="card-p">Some text for the user</p>
+      </div>
+      <div>
+        <h3 class="card-title">User A</h3>
+        <p class="card-p">Some text for the user</p>
+        <p class="card-p">Some text for the user</p>
+        <p class="card-p">Some text for the user</p>
+      </div>
+      <div>
+        <h3 class="card-title">User A</h3>
+        <p class="card-p">Some text for the user</p>
+      </div>
+      <div>
+        <h3 class="card-title">User A</h3>
+        <p class="card-p">Some text for the user</p>
+      </div>
+      <div>
+        <h3 class="card-title">User A</h3>
+        <p class="card-p">Some text for the user</p>
+      </div>
+      <div>
+        <h3 class="card-title">User A</h3>
+        <p class="card-p">Some text for the user</p>
+      </div>
+      <div>
+        <h3 class="card-title">User A</h3>
+        <p class="card-p">Some text for the user</p>
+      </div>
+    </section>
+  </body>
+</html>
