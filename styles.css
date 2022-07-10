@@ -1,39 +1,33 @@
-/* main container */
-.header {
+/* nav bar style */
+header {
   display: flex;
-  justify-content: space-between;
   background-color: dodgerblue;
-  padding: 2rem;
+  padding: 1rem;
+  color: white;
 }
 
+.title a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  flex: 2;
+}
 nav {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: flex-end;
   align-items: center;
-  flex: 2;
-  padding: 1rem;
+  flex: 1;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  font-size: 2rem;
+  padding: 4rem;
 }
 
-.acme-layout {
-  position: absolute;
-  /* top:0; */
-  left: 0;
-  padding: 2rem;
-}
-
-nav :nth-child(2) {
+.user {
   font-weight: bold;
-}
-
-.form-section {
-  background-color: white;
-  color: gray;
 }
 
 /* form style */
@@ -42,13 +36,21 @@ nav :nth-child(2) {
   display: flex;
   justify-content: center;
 }
+
+.form-section {
+  color: rgb(72, 71, 71);
+}
 .form {
-  border: 2px solid gray;
+  border: 2px solid rgb(72, 71, 71);
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 25%;
   padding-bottom: 1rem;
+}
+
+#form-title {
+  padding-right: 8rem;
 }
 
 .input,
@@ -58,7 +60,7 @@ nav :nth-child(2) {
   font-weight: bold;
   display: flex;
   padding: 1rem;
-  color: rgb(17, 17, 186);
+  /* color: rgb(17, 17, 186); */
   padding-right: 3rem;
 }
 
@@ -67,23 +69,38 @@ nav :nth-child(2) {
   color: white;
 }
 
-section{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 1rem;
-    justify-content:space-around
+lable {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
 }
-section div{
-    /* background-color:aqua; */
-    border: 2px solid gray;
-    border-radius: 10px;
-    padding: 1rem;
-    flex: 0 0 25%;
-    margin-bottom:2rem;
+.dropdown-label {
+  padding-right: 5.5rem;
+  color: blue;
+  display: flex;
 }
-.card-title, .card-p{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
+
+
+/* card styling */
+section {
+  color: rgb(72, 71, 71);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1rem;
+  justify-content: space-around;
+}
+section div {
+  /* background-color:aqua; */
+  border: 2px solid rgb(72, 71, 71);
+  border-radius: 10px;
+  padding: 1rem;
+  flex: 0 0 25%;
+  margin-bottom: 2rem;
+}
+.card-title,
+.card-p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
