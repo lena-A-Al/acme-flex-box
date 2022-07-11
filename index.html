@@ -9,48 +9,55 @@
   </head>
   <body>
     <!-- nav section -->
-      <header>
-        <div class="title">
-          <a href="#" class="acme-layout">Acme Layout</a>
-        </div>
-          <nav>
-            <div class="user"><a href="#">Users</a></div>
-            <div><a href="#">Departments</a></div>
-            <div><a href="#">Contacts</a></div>
-          </nav>
-      </header>
-
+    <header>
+      <div class="title">
+        <a href="#" class="acme-layout">Acme Layout</a>
+      </div>
+      <nav>
+        <div class="user"><a href="#">Users</a></div>
+        <div><a href="#">Departments</a></div>
+        <div><a href="#">Contacts</a></div>
+      </nav>
+    </header>
 
     <!-- form section -->
     <div class="form-section">
       <h1>Users</h1>
       <div id="main-container">
-        <form class="form" action="/acme_flex_page">
+        <form action="/acme_flex_page">
           <h1 id="form-title">Create A user</h1>
-          <div class="input">
-            <lable for="firstname">First Name</lable>
-            <input
-              type="text"
-              name="firstname"
-              id="firstname"
-              placeholder="Jane"
-            />
+
+          <div class="title">
+            <div class="label"><label for="firstname">First Name</label></div>
+            <div class="input">
+              <input
+                type="text"
+                name="firstname"
+                id="firstname"
+                placeholder="Jane"
+              />
+            </div>
           </div>
-          <div class="input">
-            <lable for="lastname">Last Name</lable>
-            <input
-              type="text"
-              name="lastname"
-              id="lastname"
-              placeholder="Joe"
-            />
+
+          <div class="title">
+            <div class="label"><label for="lastname">Last Name</label></div>
+            <div class="input">
+              <input
+                type="text"
+                name="lastname"
+                id="lastname"
+                placeholder="John"
+              />
+            </div>
           </div>
-          <div class="dropdown">
-            <lable for="department" class="dropdown-label">Department</lable>
-            <select name="department" id="department">
-              <option>--None--</option>
-            </select>
+
+          <div class="title">
+            <div class="label"><label for="lastname">Departments</label></div>
+            <div class="input">
+             <select><option>..None..</option></select>
+            </div>
           </div>
+
           <div>
             <button type="button" class="clear">Clear</button>
             <button type="button" class="save">Save</button>
@@ -93,3 +100,15 @@
     </section>
   </body>
 </html>
+
+<body>
+  <form action="/acme_flex_page">
+    <div class="control-row">
+      <h1>Create A user</h1>
+      <label>First Name</label>
+      <div>
+        <input type="text" name="firstname" id="firstname" placeholder="Jane" />
+      </div>
+    </div>
+  </form>
+</body>
