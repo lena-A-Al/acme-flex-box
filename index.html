@@ -26,7 +26,6 @@
       <div id="main-container">
         <form action="/acme_flex_page">
           <h1 id="form-title">Create A user</h1>
-
           <div class="title">
             <div class="label"><label for="firstname">First Name</label></div>
             <div class="input">
@@ -38,7 +37,6 @@
               />
             </div>
           </div>
-
           <div class="title">
             <div class="label"><label for="lastname">Last Name</label></div>
             <div class="input">
@@ -50,15 +48,17 @@
               />
             </div>
           </div>
-
-          <div class="title">
-            <div class="label"><label for="lastname">Departments</label></div>
-            <div class="input">
-             <select><option>..None..</option></select>
-            </div>
+          <div class="departments">
+            <label>Department</label>
+            <select>
+              <option value="">-- None --</option>
+              <option value="">Administration</option>
+              <option value="">Human Resources</option>
+              <option value="">Engineering</option>
+            </select>
           </div>
 
-          <div>
+          <div class="button">
             <button type="button" class="clear">Clear</button>
             <button type="button" class="save">Save</button>
           </div>
@@ -100,15 +100,3 @@
     </section>
   </body>
 </html>
-
-<body>
-  <form action="/acme_flex_page">
-    <div class="control-row">
-      <h1>Create A user</h1>
-      <label>First Name</label>
-      <div>
-        <input type="text" name="firstname" id="firstname" placeholder="Jane" />
-      </div>
-    </div>
-  </form>
-</body>
