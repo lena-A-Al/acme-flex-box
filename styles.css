@@ -32,17 +32,17 @@ nav a {
 }
 
 /* form style */
- #main-container {
+#main-container {
   display: flex;
-} 
+}
 form {
   border: 2px solid rgb(72, 71, 71);
-  flex:display;
+  flex: display;
   align-items: center;
   justify-content: center;
   align-content: center;
-  width:50%;
-  margin-left:15rem;
+  width: 50%;
+  margin-left: 15rem;
 }
 .flex-outer li {
   display: flex;
@@ -90,19 +90,35 @@ section div {
   align-items: center;
 }
 
-@media (max-width:600px){
-  nav{
+@media (max-width: 600px) {
+  nav {
     display: flex;
     flex-direction: column;
   }
   form {
     display: flex;
     flex-direction: column;
-    margin-left:3rem;;
+    margin-left: 3rem;
   }
-  section{
+  section {
     display: flex;
     flex-direction: column;
   }
-}
+  .button {
+    display: flex;
+    flex-direction: column;
+  }
+  .button .save {
+    display: flex;
+    background-color: dodgerblue;
+    width: 100%;
+    align-items: center;
+  }
 
+  .save {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
