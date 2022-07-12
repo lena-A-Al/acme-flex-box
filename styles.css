@@ -1,7 +1,4 @@
 /* nav bar style */
-body {
-  width: 100vw;
-}
 header {
   display: flex;
   background-color: dodgerblue;
