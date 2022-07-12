@@ -35,54 +35,35 @@ nav a {
 }
 
 /* form style */
-
-.form-section {
-  color: rgb(72, 71, 71);
-}
-
-#main-container {
+ #main-container {
   display: flex;
-  justify-content: center;
-}
-
+} 
 form {
   border: 2px solid rgb(72, 71, 71);
-  display: flex;
-  flex-direction: column;
+  flex:display;
   align-items: center;
-  padding-bottom: 1rem;
+  justify-content: center;
+  align-content: center;
+  width:50%;
+  margin-left:15rem;
 }
-
-#form-title {
-  padding-right: 10rem;
-  margin: 1rem;
-}
-
-.title {
+.flex-outer li {
   display: flex;
-  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 5px;
 }
 
-.label {
-  display: flex;
-  flex: 2;
-  margin-right: 3rem;
+label,
+.flex-outer li p {
+  flex: 1 0 120px;
+  max-width: 220px;
 }
-
-.input {
-  display: flex;
-  flex: 1;
-}
-.departments {
-  display: flex;
-  flex: 1;
-  margin-right: 4rem;
-}
-
 .button {
   display: flex;
   align-items: center;
   margin-top: 1.5rem;
+  justify-content: center;
 }
 .save {
   background-color: dodgerblue;
@@ -99,7 +80,6 @@ section {
   justify-content: space-around;
 }
 section div {
-  /* background-color:aqua; */
   border: 2px solid rgb(72, 71, 71);
   border-radius: 10px;
   padding: 1rem;
@@ -111,5 +91,21 @@ section div {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media (max-width:600px){
+  nav{
+    display: flex;
+    flex-direction: column;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-left:3rem;;
+  }
+  section{
+    display: flex;
+    flex-direction: column;
+  }
 }
 

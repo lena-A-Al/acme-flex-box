@@ -21,50 +21,34 @@
     </header>
 
     <!-- form section -->
-    <div class="form-section">
       <h1>Users</h1>
-      <div id="main-container">
-        <form action="/acme_flex_page">
-          <h1 id="form-title">Create A user</h1>
-          <div class="title">
-            <div class="label"><label for="firstname">First Name</label></div>
-            <div class="input">
-              <input
-                type="text"
-                name="firstname"
-                id="firstname"
-                placeholder="Jane"
-              />
-            </div>
-          </div>
-          <div class="title">
-            <div class="label"><label for="lastname">Last Name</label></div>
-            <div class="input">
-              <input
-                type="text"
-                name="lastname"
-                id="lastname"
-                placeholder="John"
-              />
-            </div>
-          </div>
-          <div class="departments">
-            <label>Department</label>
+      <form>
+        <h1 id="form-title">Create A user</h1>
+  
+        <ul class="flex-outer">
+          <li>
+            <label>First Name</label>
+            <input type="text" id="first-name" placeholder="Jane" />
+          </li>
+          <li>
+            <label>Last Name</label>
+            <input type="text" id="last-name" placeholder="Jone" />
+          </li>
+          <li>
+            <label>Departments</label>
             <select>
               <option value="">-- None --</option>
               <option value="">Administration</option>
               <option value="">Human Resources</option>
               <option value="">Engineering</option>
             </select>
-          </div>
-
+          </li>
           <div class="button">
             <button type="button" class="clear">Clear</button>
             <button type="button" class="save">Save</button>
           </div>
-        </form>
-      </div>
-    </div>
+        </ul>
+      </form>
     <!-- card section -->
     <section id="card">
       <div>
