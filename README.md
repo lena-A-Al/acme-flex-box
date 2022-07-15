@@ -1,0 +1,1 @@
+you will create a layout for an application that displays user information and allows the creation of new users. This exercise is just focused on practicing HTML and CSS, so you will not need to add any interactivity to the site. You will only be building a static display.
