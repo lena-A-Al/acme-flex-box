@@ -44,7 +44,7 @@ form {
   justify-content: center;
   align-content: center;
   width: 50%;
-  margin-left: 15rem;
+  /* margin-left: 15rem; */
 }
 .flex-outer li {
   display: flex;
