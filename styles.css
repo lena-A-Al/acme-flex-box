@@ -97,10 +97,10 @@ section div {
     display: flex;
     flex-direction: column;
   }
-  form {
+  .form-container {
     display: flex;
-    flex-direction: column;
-    margin-left: 3rem;
+    justify-content: center;
+    align-items: center;
   }
   section {
     display: flex;
@@ -109,16 +109,17 @@ section div {
   .button {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .button .save {
     display: flex;
     background-color: dodgerblue;
-    width: 100%;
+    width: 50%;
     align-items: center;
+    justify-content: center;
   }
 
   .save {
-    margin-top: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
